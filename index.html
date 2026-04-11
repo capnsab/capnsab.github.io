@@ -22,11 +22,10 @@
 
 
         
-        <div id="topBar"> <img src "https://raw.githubusercontent.com/capnsab/capnsab.github.io/main/images/anibutterfly2.gif" alt="alternative text"></div>
-        <div id="headerArea">
 
 
-            <nav id="navbar" style="margin-bottom: 10px;">
+
+            <nav id="navbar" style="margin-bottom: 10px; margin-top: 10px;">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Link</a></li>
@@ -51,6 +50,7 @@
                     </ul>
                 </div>
                 <h2>Hello World</h2>
+                <div class="box">
                 <h3>Other Things</h3>
                 <ul>
                     <li>one
@@ -79,14 +79,14 @@
 
         </div>
 
-        <footer id="footer" style="margin-top: 10px;"></footer>
+        
     </div>
     <!-- THIS IS THE CSS !-->
     <style>
 
         :root {
             --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-            --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+            --body-bg-image: url('https://textures.neocities.org/textures/abstract-pink-and-blue/408.GIF');
 
             /* colors */
             --content: #43256E;
@@ -121,7 +121,7 @@
             font-family: 'Nunito', sans-serif;
             margin: 0;
             background-color: #08031A;
-            background-size: 65px;
+            background-size: 300px;
             color: #444c49;
             background-image: var(--body-bg-image);
         }
@@ -158,7 +158,7 @@
         /* navigation section!! */
         #navbar {
             height: 40px;
-            background-color: #d3ede4;
+            background-color: transparent;
             /* navbar color */
             width: 100%;
         }
@@ -177,7 +177,7 @@
 
         /* navigation links*/
         #navbar li a {
-            color: #444c49;
+            color: #fdfafc;
             /* navbar text color */
             font-weight: 800;
             text-decoration: none;
@@ -195,7 +195,7 @@
         }
 
         aside {
-            background-color: #d3ede4;
+            background-color: #transparent;
             width: 200px;
             padding: 20px;
             font-size: smaller;
@@ -207,6 +207,7 @@
         main {
             background-color: #d3ede4;
             flex: 1;
+            border: 2px solid #444c49;
             padding: 20px;
             order: 2;
         }
@@ -219,18 +220,14 @@
             order: 3;
         }
 
-        footer {
-            background-color: #13092D;
-            /* background color for footer */
-            width: 100%;
-            height: 40px;
-            padding: 10px;
-            text-align: center;
-            /* this centers the footer text */
-        }
+        
 
-        h1,
-        h2,
+        h1{
+            color: #444c49;
+        }
+        h2{
+            color: #fdfafc;
+        }
         h3 {
             color: #444c49;
         }
@@ -246,7 +243,7 @@
 
         /* this is just darker colored box */
         .box {
-            background-color: #add2c5;
+            background-color: #d3ede4;
             border: 2px solid #444c49;
             padding: 12px;
         }
